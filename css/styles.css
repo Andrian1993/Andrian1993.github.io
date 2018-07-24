@@ -1,3 +1,13 @@
+nav{
+  background-color: #76c7c0;
+  min-height: 80px;
+}
 
+nav a{
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 80px;
+  margin: 0 20px;
+}
 
 /* код партнера */

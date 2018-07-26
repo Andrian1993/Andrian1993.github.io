@@ -10,6 +10,17 @@ nav a{
   margin: 0 20px;
 }
 
+.section-intro{
+  background: #ececec;
+  min-height: 102px;
+  margin: 48px 0;
+}
+
+.section-services{
+  min-height: 340px;
+  background: #e5e6e6;
+}
+
 
 
 /* код партнера */

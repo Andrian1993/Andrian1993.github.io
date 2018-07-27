@@ -10,17 +10,52 @@ nav a{
   margin: 0 20px;
 }
 
+.intro-services{
+  background: #e5e6e6;
+  min-height: 590px;
+}
+
 .section-intro{
   background: #ececec;
+  margin-bottom: 96px;
+  position: relative;
+  top: 48px;
+}
+
+.section-intro .col-3,
+.section-intro .col-9{
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;     /*Центрирование по вертикали */
+}
+
+.section-intro .row{
   min-height: 102px;
-  margin: 48px 0;
 }
 
 .section-services{
   min-height: 340px;
-  background: #e5e6e6;
 }
 
+.section-services .card{
+  background: #f8f8f8;
+  height: 312px;
+  padding: 15px;
+}
 
+.section-services button{
+  position: relative;
+  bottom: 20px;
+}
 
+i{
+  padding-top: 48px;
+  color: #17a2b8;
+}
+
+h5{
+  padding: 12px 0;
+}
+
+/* progress bar */
 /* код партнера */

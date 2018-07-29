@@ -57,5 +57,20 @@ h5{
   padding: 12px 0;
 }
 
+.about-header{
+  min-height: 400px;
+  background: #ececec;
+  text-align: center;
+}
+
+.about-header h2{
+  color: #e1524b;
+}
+
+.about-footer{
+  min-height: 408px;
+}
+
+
 /* progress bar */
 /* код партнера */

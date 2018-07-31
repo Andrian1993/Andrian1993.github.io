@@ -1,13 +1,91 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+ul{
+  margin-bottom: 0;
+}
+
 nav{
   background-color: #76c7c0;
   min-height: 80px;
 }
 
-nav a{
+.top-menu{
+  margin-bottom: 0;
+}
+
+.top-menu > li{
+  display: inline-block;
+  position: relative;
+}
+.top-menu > li > a{
+  line-height: 80px;
   color: #ffffff;
   font-size: 12px;
-  line-height: 80px;
-  margin: 0 20px;
+  margin: 0 4px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.25s, color 0.15s;
+}
+
+.top-menu > li > a:hover{
+  background: #528b86;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.top-menu > li:hover > ul a{
+  opacity: 1;
+}
+
+.top_menu > li:hover > ul li{
+  height: 40px;
+  opacity: 1;
+}
+
+
+#portfolio:hover{
+  background-color: #e75e55;
+}
+
+
+.inner-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #76c7c0;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.inner_menu > li{
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.4s;
+}
+
+.inner-menu > li > a{
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  color: inherit;
+  text-decoration: none;
+  height: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.5s;
+}
+
+.inner-menu > li > a:hover{
+  color: white;
+  background-color: #a7fc00;
 }
 
 .intro-services{
@@ -22,8 +100,8 @@ nav a{
   top: 48px;
 }
 
-.section-intro .col-3,
-.section-intro .col-9{
+.section-intro .col-xl-3,
+.section-intro .col-xl-9{
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center;     /*Центрирование по вертикали */
@@ -67,6 +145,11 @@ h5{
   color: #e1524b;
 }
 
+.why-modus{
+  position: relative;
+  top: 70px
+}
+
 .about-footer{
   min-height: 408px;
 }
@@ -74,3 +157,68 @@ h5{
 
 /* progress bar */
 /* код партнера */
+
+
+#header{
+  background-color: #aaf0d1; //магическая мята
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+#top_menu{
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+#top_menu > li{
+  display: inline-block;
+  position: relative;
+}
+#top_menu > li > a{
+  display: inline-block;
+  padding: 10px 20px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.25s, color 0.15s;
+}
+#top_menu > li > a:hover{
+  color: white;
+  background-color: #a7fc00; // весенний бутон
+}
+#top_menu > li:hover > ul a{
+  opacity: 1;
+}
+#top_menu > li:hover > ul li{
+  height: 40px;
+  opacity: 1;
+}
+.inner_menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #aaf0d1;
+}
+.inner_menu > li{
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.4s;
+}
+.inner_menu > li > a{
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  color: inherit;
+  text-decoration: none;
+  height: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.5s;
+}
+.inner_menu > li > a:hover{
+  color: white;
+  background-color: #a7fc00;
+}

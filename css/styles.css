@@ -275,10 +275,10 @@ h5{
 
 }
 
-.footer .col-2 li {
+.footer_list li{
     list-style-type: none;
    }
-   li:before {
+.footer_list li:before {
     content: "> "; /* Добавляем в качестве маркера символ */
 }
 
@@ -289,4 +289,4 @@ h5{
 
 .footer .row {
   padding-top: 15px;
-} 
+}

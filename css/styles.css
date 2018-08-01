@@ -20,6 +20,11 @@ nav{
   display: inline-block;
   position: relative;
 }
+
+.top-menu > li > ul{
+  display: none;
+}
+
 .top-menu > li > a{
   line-height: 80px;
   color: #ffffff;
@@ -36,17 +41,6 @@ nav{
   color: #ffffff;
 }
 
-
-.top-menu > li:hover > ul a{
-  opacity: 1;
-}
-
-.top_menu > li:hover > ul li{
-  height: 40px;
-  opacity: 1;
-}
-
-
 #portfolio:hover{
   background-color: #e75e55;
 }
@@ -54,39 +48,39 @@ nav{
 
 .inner-menu{
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 90%;
+  left: 3%;
   list-style: none;
   padding-left: 0;
+  border-radius: 8px;
   text-align: left;
   white-space: nowrap;
-  background-color: #76c7c0;
+  background-color: #e2534b;
   color: #ffffff;
   z-index: 1;
 }
 
-.inner_menu > li{
-  height: 0;
-  opacity: 0;
-  transition: height 0.3s, opacity 0.4s;
-}
-
 .inner-menu > li > a{
-  width: 100%;
+  min-width: 100px;
   display: inline-block;
   padding: 10px 20px;
+  margin: 0 5px;
+  margin-top: 7px;
   color: inherit;
+  border-radius: 8px;
   text-decoration: none;
-  height: inherit;
   overflow: hidden;
-  opacity: 0;
-  transition: height 0.4s, opacity 0.5s;
+  background: #e4635c;
 }
 
 .inner-menu > li > a:hover{
   color: white;
-  background-color: #a7fc00;
+  background-color: #76c7c0;
 }
+
+
+
+/* intro-services */
 
 .intro-services{
   background: #e5e6e6;
@@ -221,72 +215,4 @@ h5{
 .inner_menu > li > a:hover{
   color: white;
   background-color: #a7fc00;
-}
-
-.footer {
-
-  padding-top: 20px;
-  background-image: url(img/linear.png) no-repeat;
-  background-color: #76c7c0;
-
-}
-
-.footer .footer_number {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
-  margin: 0 auto;
-}
-
-.footer .footer_email {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-
-.footer p {
-  color: #fff;
-}
-
-.footer h2,h3 {
-  margin-bottom: 35px;
-}
-
-.footer h2 {
-  color: #fff;
-}
-
-.from {
-  font-weight: 100;
-  color: #fff;
-  font-style: italic;
-}
-
-.footer h3 {
-  color: #4b7e79;
-  font-weight: bold;
-}
-
-
-
-.footer .col-2 ul {
-  color: #FFF;
-
-}
-
-.footer_list li{
-    list-style-type: none;
-   }
-.footer_list li:before {
-    content: "> "; /* Добавляем в качестве маркера символ */
-}
-
-.blog img{
-  float: left;
-  margin-right: 19px;
-}
-
-.footer .row {
-  padding-top: 15px;
 }

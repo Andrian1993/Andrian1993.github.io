@@ -78,8 +78,6 @@ nav{
   background-color: #76c7c0;
 }
 
-
-
 /* intro-services */
 
 .intro-services{
@@ -94,12 +92,24 @@ nav{
   top: 48px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;     /*Центрирование по вертикали */
+}
+
+.brand h3{
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
 .section-intro .col-xl-3,
 .section-intro .col-xl-9{
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center;     /*Центрирование по вертикали */
 }
+
+
 
 .section-intro .row{
   min-height: 102px;
@@ -135,84 +145,157 @@ h5{
   text-align: center;
 }
 
+.about-header .container{
+  position: relative;
+  min-height: inherit;
+}
+
 .about-header h2{
   color: #e1524b;
 }
 
 .why-modus{
   position: relative;
-  top: 70px
+  top: 70px;
+}
+
+.image-card{
+  height: 360px;
+  width: 570px;
+  border-radius: 15px;
+  background: #c1c7c8;
+  position: absolute;
+  bottom: -40%;
+  left: 25%;
+  z-index: 2;
+}
+
+.image-card.right,
+.image-card.left{
+  height: 260px;
+  width: 370px;
+  left: auto;
+  right: 0;
+  bottom: -30%;
+  z-index: 1;
+  background: #b0b8b9;
+}
+
+.image-card.left{
+  right: auto;
+  left: 0;
+}
+
+.image-card .picture{
+  min-height: calc(100% - 50px);
+  max-width: 98%;
+  background: #7f8c8c;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.buttons{
+  padding: 0 20px;
+  padding-top: 15px;
+}
+
+.left-button{
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background: #ececec;
+  float: left;
+  margin: 4px;
+}
+
+.right-button{
+  width: 12px;
+  height: 6px;
+  border-radius: 30%;
+  background: #ececec;
+  float: right;
+  margin: 4px;
 }
 
 .about-footer{
   min-height: 408px;
+  display: flex;
 }
 
+.about-footer .container{
+  min-height: 195px;
 
+}
 /* progress bar */
 /* код партнера */
 
+.footer {
 
-#header{
-  background-color: #aaf0d1; //магическая мята
-  border-bottom: 1px solid gray;
-  text-align: center;
+  padding-top: 20px;
+  background-image: url(img/linear.png) no-repeat;
+  background-color: #76c7c0;
+
 }
-#top_menu{
-  display: inline-block;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+
+.footer .footer_number {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0 auto;
 }
-#top_menu > li{
-  display: inline-block;
-  position: relative;
+
+.footer .footer_email {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
 }
-#top_menu > li > a{
-  display: inline-block;
-  padding: 10px 20px;
-  color: inherit;
-  text-decoration: none;
-  transition: background-color 0.25s, color 0.15s;
+
+
+.footer p {
+  color: #fff;
 }
-#top_menu > li > a:hover{
-  color: white;
-  background-color: #a7fc00; // весенний бутон
+
+.footer h2,h3 {
+  margin-bottom: 35px;
 }
-#top_menu > li:hover > ul a{
-  opacity: 1;
+
+.footer h2 {
+  color: #fff;
 }
-#top_menu > li:hover > ul li{
-  height: 40px;
-  opacity: 1;
+
+.from {
+  font-weight: 100;
+  color: #fff;
+  font-style: italic;
 }
-.inner_menu{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-  white-space: nowrap;
-  background-color: #aaf0d1;
+
+.footer h3 {
+  color: #4b7e79;
+  font-weight: bold;
 }
-.inner_menu > li{
-  height: 0;
-  opacity: 0;
-  transition: height 0.3s, opacity 0.4s;
+
+
+
+.footer .col-2 ul {
+  color: #FFF;
+
 }
-.inner_menu > li > a{
-  width: 100%;
-  display: inline-block;
-  padding: 10px 20px;
-  color: inherit;
-  text-decoration: none;
-  height: inherit;
-  overflow: hidden;
-  opacity: 0;
-  transition: height 0.4s, opacity 0.5s;
+
+.footer .col-2 li {
+    list-style-type: none;
+   }
+
+.footer .col-2 li:before {
+    content: "> "; /* Добавляем в качестве маркера символ */
 }
-.inner_menu > li > a:hover{
-  color: white;
-  background-color: #a7fc00;
+
+.blog img{
+  float: left;
+  margin-right: 19px;
+}
+
+.footer .row {
+  padding-top: 15px;
 }

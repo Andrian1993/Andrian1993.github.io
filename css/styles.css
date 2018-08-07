@@ -228,6 +228,13 @@ h5{
   min-height: 195px;
 
 }
+
+svg path {
+  will-change: auto;
+  stroke-width: 20px;
+  stroke-miterlimit: round;
+  transition: stroke-dashoffset 850ms ease-in-out;
+}
 /* progress bar */
 /* код партнера */
 
@@ -283,7 +290,8 @@ h5{
 
 }
 
-.footer .col-2 li {
+.footer .col-2 li,
+.about-footer li{
     list-style-type: none;
    }
 

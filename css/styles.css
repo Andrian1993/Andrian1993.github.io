@@ -119,6 +119,10 @@ nav{
   min-height: 340px;
 }
 
+.section-services .row{
+  margin: 0 -30px;
+}
+
 .section-services .card{
   background: #f8f8f8;
   height: 312px;
@@ -262,6 +266,7 @@ svg path {
 
 .footer p {
   color: #fff;
+  margin-bottom: 0;
 }
 
 .footer h2,h3 {

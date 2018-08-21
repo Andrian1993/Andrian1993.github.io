@@ -14,7 +14,7 @@ ul {
   margin-bottom: 0;
 }
 
-#navbar {
+nav {
   background-color: #76c7c0;
   min-height: 80px;
 }
@@ -505,6 +505,9 @@ svg path {
   color: #ffffff;
 }
 
+.portfolio-image.hideBlock{
+
+}
 
 
 /*Portfolio styles end*/

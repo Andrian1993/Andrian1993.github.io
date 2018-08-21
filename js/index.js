@@ -31,4 +31,13 @@ meters.forEach( (path) => {
   path.style.strokeDashoffset = Math.max(0, to);
 });
 
+$(".portfolio-image").hover(
+  function(){
+    $(this)..toggleClass('hideBlock');
+  }
+);
+
+
+
+
 });

@@ -1,3 +1,7 @@
+@import "./_mixins/font-face"
+
+body
+	background-color: #f3f3f3 !important
 p 
 	margin-bottom: 0 
 a 
@@ -53,11 +57,17 @@ nav
 			padding: 10px 16px 
 			border-radius: 8px 
 			transition: background-color 0.25s, color 0.15s 
-			font-family: "Open Sans - Semibold" 
+			font-family: "Open Sans"  
 			&:hover 
 				background: #528b86 
 				text-decoration: none 
 				color: #ffffff 
+
+.active
+	background: #62a29e
+	box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.75) 
+
+	
 #portfolio 
 	&:hover 
 		background-color: #e75e55 
@@ -261,11 +271,11 @@ svg
 	background-color: #ececec 
 	min-height: 80px 
 	display: flex 
-	align-items: center 
+	align-items: center  
 	h5 
 		margin-bottom: 0 
 		color: #7f8c8c 
-		font-family: "Open Sans - Semibold" 
+		font-family: "Open Sans" 
 		font-size: 20px 
 		font-weight: 400 
 		line-height: 24px 
@@ -386,16 +396,13 @@ svg
 	.page-link 
 		border-radius: 5px 
 .blog-news 
-	margin-top: 110px 
-.blog-caption 
-	width: 70px 
-	height: 80px 
-	margin-bottom: 17px 
-	background-color: #f8f8f8 
-	border-radius: 10px 
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-	-moz-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-	box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
+	margin-top: 110px	 
+.blog-caption,
+.blog-caption2,
+.blog-caption3,
+.blog-caption4,
+.blog-caption5
+	@include blog-date-style
 .month 
 	color: #7f8c8c 
 	font-size: 20px 
@@ -414,29 +421,48 @@ svg
 	text-align: center 
 	color: #7f8c8c 
 	margin-left: 2px 
-.blog-caption-two 
-	width: 70px 
-	height: 80px 
-	background-color: #7f8c8c 
-	border-radius: 10px 
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-	-moz-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-	box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-.fa-file-alt 
-	position: absolute 
-	margin-left: 22px 
-	margin-top: 23px 
-	color: #ffffff 
+.blog-caption-two,
+.blog-caption-two2,
+.blog-caption-two3,
+.blog-caption-two4, 
+.blog-caption-two5 
+	@include blog-icon-style
+
+.blog-caption-main2
+	margin-top: 430px
+.blog-caption-main3
+	margin-top: 505px
+.blog-caption-main4
+	margin-top: 510px
+.blog-caption-main5
+	margin-top: 65px
+
+
+.fa-file-alt,
+.fa-film,
+.fa-image,
+.fa-volume-up,
+.fa-quote-right 
+	@include blog-icon
+.text-blog
+	height: 500px
 .blog-photo 
 	height: 300px 
-	background-color: #f8f8f8 
 	-webkit-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
 	-moz-box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
 	box-shadow: 0px 2px 2px 0px rgba(229, 230, 230, 1) 
-	background-image: url("./blogphoto.jpg") 
+	background-image: url("img/blog-photo.jpg") 
 	background-repeat: no-repeat 
 	background-position: center 
-	border-radius: 10px 
+	border-radius: 10px
+.blog-audio
+	width: 730px
+	height: 90px
+	margin-top: 51px
+	background-color: #f8f8f8 
+	text-align: center
+	padding-top: 20px
+	border-radius: 5px
 .com-h5 
 	color: #7f8c8c 
 	font-size: 16px 
@@ -503,3 +529,125 @@ svg
 		margin-left: 15px 
 		&:hover 
 			text-decoration: none 
+.blog-slider
+	margin-top: 40px
+#blog-hr
+	border: 1px solid rgba(0,0,0,.1)
+.services-caption
+	margin-top: 60px
+	h3
+		color: #e1524b
+.services-list
+	ul 
+		list-style-position: outside 
+		& > li 
+			color: #777777
+			font-size: 13px 
+			font-weight: 400 
+			line-height: 26px  
+	li 
+		&:before 
+			color: #e1524b 
+			content: "\f061" 
+			font-family: 'FontAwesome' 
+			display: inline-block 
+			margin-left: -1.3em 
+			width: 1.3em 
+.services-nav
+	margin-top: 58px
+.services-cards
+	.services-cover
+		width: 100%
+		height: 400px
+		margin-top: 75px
+		background-color: #ececec
+		background-size: cover
+		position: absolute
+	.button-1,
+	.button-2
+		width: 200px
+		height: 54px
+		background-color: #7f8c8c
+		font-family: "Open Sans"
+		font-weight: 600
+		transition: .5s ease
+		&:hover
+				transform: scale(1.1)
+	.button-1
+		position: relative
+		top: 27px
+			
+	.button-2
+		position: relative
+		bottom: 27px
+	.button-1.bussines,
+	.button-2.bussines
+		background-color: #e2534b		
+.services-graph
+	color: #777777
+	font-size: 13px
+	font-weight: 400
+	font-family: "Open Sans"
+	line-height: 24.7px
+	text-decoration: underline
+	span
+		color: #ff0000
+	.progressBar
+		margin-top: 15px
+.services-card
+	height: 310px
+	background-color: #f8f8f8
+	border-radius: 5px
+	box-shadow: 0px 4px 1px 0px rgba(229,230,230,1)
+	padding-top: 60px
+	color: #777777
+	font-family: "Open Sans"
+	font-size: 14px
+	hr
+		width: 200px
+		height: 1px
+		background-color: #ececec
+	
+
+.services-card.bussines
+	background-color: #76c7c0
+	color: #ffffff
+.services-card-header
+	h2
+		color: #7f8c8c
+		font-family: "Open Sans"
+		font-size: 40px
+		font-weight: 700 !important
+		line-height: 48px
+		margin-top: 149px	
+.slider-header
+	margin-top: 98px
+	h2
+		color: #e1524b
+		font-family: "Open Sans"
+		text-align: center
+		font-size: 40px
+		font-weight: 300
+		line-height: 48px
+	p
+		color: #7f8c8c
+		text-align: center
+		font-family: "Open Sans"
+		font-size: 14px
+		font-weight: 400
+		line-height: 20.8px
+		color: #777777
+		font-size: 13px
+.services-slider
+	margin-bottom: 67px
+.swiper-container
+    height: 90px
+.swiper-slide 
+	text-align: center
+	font-size: 18px
+	background: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 5px
+	

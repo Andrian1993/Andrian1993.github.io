@@ -1,5 +1,5 @@
 $(function () {
-
+  Barba.Pjax.start();
   $('nav ul li').hover(
     function () {
       $('ul', this).stop().slideDown(400)
@@ -17,7 +17,7 @@ $(function () {
         img.attr('src', imgName)
         imgHolder.append(img)
         $('.image-holder').append(imgHolder)
-        console.log('hello')        
+        console.log('hello')
     }
   }())
 
@@ -39,12 +39,12 @@ $(function () {
     }
   )
 
-  
+
   // let button = document.getElementsByClassName('top-menu');
   // console.log(button);
   // let arr = Array.from(button);
   // console.log(arr[0]);
-  
+
 let array = [];
 $('.blog-button').each(function () {
     array.push(this.innerText);
@@ -56,14 +56,14 @@ $('.blog-button').each(function () {
 
 
 
-  
+
   // const pageName = (window.location.pathname).replace('.html','');
   // pageName.slice(0);
   // console.log(pageName);
-  
+
   // const path = window.location.pathname;
   // console.log(path);
-  
+
 
   // let button = document.getElementsByTagName('blog-button');
   // console.log(button);
@@ -75,7 +75,7 @@ $('.blog-button').each(function () {
   // for (let i = 0; i < buttonName.length; i++) {
   //   elements.push(i);
   //   console.log(elements);
-    
+
   // }
 
   // if (buttonName === 'BLOG') {
@@ -120,5 +120,3 @@ $(".carousel-control-next").click(function(){
 
 
 })
-
-

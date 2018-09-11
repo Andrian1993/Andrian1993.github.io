@@ -122,6 +122,8 @@ nav
 	align-items: center
 .section-services
 	min-height: 340px
+	.row
+		margin: 0 -30px
 	.card
 		background: #f8f8f8
 		height: 312px
@@ -193,15 +195,104 @@ h5
 	float: right
 	margin: 4px
 .about-footer
-	min-height: 408px
-	display: flex
-	.container
+	min-height: 682px
+	.feedback
 		min-height: 195px
-.progressBar
-	position: relative
-	img
-		position: absolute
-		top: 0
+		padding-top: 214px
+		.services-progressBar
+			margin-top: 55px
+			.progressBar
+				position: relative
+				width: 120px
+				height: 58px
+				img
+					position: absolute
+					top: 0
+				p
+					position: absolute
+					text-align: center
+					font-size: 30px
+					bottom: -10px
+					margin: 0
+					width: 100%
+					font-weight: 1000
+		.progressText
+			width: 120px
+			text-align: center
+			margin-top: 15px
+		ul
+			padding: 0
+		ul li
+	    background: url(../img/marker.png) no-repeat 0 7px
+	    padding-left: 16px
+		li
+			line-height: 26px
+		.quote
+			width: 270px
+			height: 144px
+			background-color: #f8f8f8
+			padding: 10px
+			&:before
+				content: ' '
+				position: absolute
+				width: 0
+				height: 0
+				left: 30px
+				top: 180px
+				border: 15px solid
+				border-color: #f8f8f8 #f8f8f8 transparent transparent
+			i
+				width: 234px
+				height: 84px
+				color: #777777
+				font-family: "Open Sans"
+				font-size: 13px
+				font-style: italic
+				line-height: 24.7px
+				font-family: "Open Sans"
+				font-weight: 400
+
+		h5
+			margin-left: 59px
+	.clients
+		margin-top: 50px
+		display: flex
+		align-items: center
+		p
+			width: 130px
+			height: inherit
+			color: #7f8c8c
+			font-size: 16px
+			font-weight: 400
+			line-height: 19.2px
+			margin-bottom: 0
+			margin-right: 19px
+		.just-line
+			width: 870px
+			height: 1px
+			background-color: #e1e2e2
+		button
+			margin-left: 19px
+			width: 40px
+			height: 37px
+			background-color: #8c9797
+			opacity: 0.2
+			border-radius: 20%
+			color: #ffffff
+		.services-slider
+			margin: 51px 0
+		.swiper-container
+		    height: 90px
+		.swiper-slide
+			text-align: center
+			font-size: 18px
+			background: #fff
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 5px
+
+
 svg
 	path
 		will-change: auto

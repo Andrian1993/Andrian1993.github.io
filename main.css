@@ -1,0 +1,20 @@
+body {
+  font-family: "Open Sans", "Helvetica", "Arial", "sans-serif"; }
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center; }
+
+.logo {
+  padding-top: 20px; }
+
+.title {
+  color: #e6e6e6;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px black; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
